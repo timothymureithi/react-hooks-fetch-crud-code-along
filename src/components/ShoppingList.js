@@ -8,6 +8,7 @@ function ShoppingList() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [items, setItems] = useState([]);
 
+  //fetch Items
   useEffect(() => {
     fetch("http://localhost:4000/items")
       .then((r) => r.json())
